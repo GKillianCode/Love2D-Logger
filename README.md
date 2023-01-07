@@ -8,7 +8,7 @@ It is a very simple installation.
 
 ### First method : via the command line
 ```
-git clone https://github.com/GKillianCode/Love2d-Logger
+git clone https://github.com/GKillianCode/Love2D-Logger
 ```
 
 ### Second method :
