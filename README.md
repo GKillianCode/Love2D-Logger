@@ -59,3 +59,9 @@ logger.separationChar = ":" -- Default "|"
 logger.alertLevelView = 2 -- Default "10"
 logger.showLoggerinfo = false -- Default true
 ```
+
+Result with variables customization:
+```
+WARN : Warning, there has been an error
+CRITICAL : Critical error, stopping program
+```
