@@ -49,3 +49,13 @@ DEBUG | This is a debug message
 WARN | Warning, there has been an error
 CRITICAL | Critical error, stopping program
 ```
+
+## Logger customization
+
+Personnalize your variables of the logger.
+
+``` lua
+logger.separationChar = ":" -- Default "|"
+logger.alertLevelView = 2 -- Default "10"
+logger.showLoggerinfo = false -- Default true
+```
