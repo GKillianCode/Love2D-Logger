@@ -1,22 +1,28 @@
 # Love2D Logger
 
 ## Description
+
 It is a simple logger for the development of your games.
 
 ## Download
+
 It is a very simple installation.
 
 ### First method : via the command line
+
 ```
-git clone https://github.com/GKillianCode/Love2D-Logger
+git clone https://github.com/GKillianCode/Love2d-Logger
 ```
 
 ### Second method :
+
 -> Download the zip folder.
 
 # Usage Exemple
+
 Import the library :
-``` lua
+
+```lua
 local logger = require "logger"
 ```
 
@@ -28,7 +34,7 @@ The logger.newErrorLevel function allows you to create a new log severity level 
 
 Here are some examples of using the logger function:
 
-``` lua
+```lua
 -- Display a debug message
 logger.debug("This is a debug message")
 
@@ -41,27 +47,15 @@ logger.newErrorLevel("CRITICAL", 1)
 -- Display a message of "CRITICAL" level
 logger.critical("Critical error, stopping program")
 ```
-Messages will be displayed in the console with the log level first, followed by the logger.separationChar character and the message. 
+
+Messages will be displayed in the console with the log level first, followed by the logger.separationChar character and the message.
 For example:
 
-``` lua
+```lua
 DEBUG | This is a debug message
 WARN | Warning, there has been an error
 CRITICAL | Critical error, stopping program
 ```
 
-## Logger customization
-
-Personnalize your variables of the logger.
-
-``` lua
-logger.separationChar = ":" -- Default "|"
-logger.alertLevelView = 2 -- Default "10"
-logger.showLoggerinfo = false -- Default true
-```
-
-Result with variables customization:
-```
-WARN : Warning, there has been an error
-CRITICAL : Critical error, stopping program
-```
+Logs are stored in application data (see documentation according to your environment: https://love2d.org/wiki/love.filesystem).
+The file name corresponds to the execution date.
